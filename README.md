@@ -4,11 +4,11 @@
 
 Dans le cadre de notre formation en L3 Économie et Ingénierie Financière à l'Université Paris Dauphine-PSL, Nous, **Sana Harchaoui et Sihame Jdid**, avons décidé, pour notre projet d'Informatique appliquée à la finance, de travailler sur le sujet C : Création d'un Simulateur de Carnet d'Ordres. 
 
-Ce choix reflète notre volonté de combiner nos connaissances économiques financières acquises tout au long de notre formations à nos compétences techniques en prorammation, en s'attaquant à l'un des aspects principaux des marchés financiers.
+Ce choix reflète notre volonté de combiner nos connaissances économiques financières acquises tout au long de notre formation à nos compétences techniques en prorammation, en s'attaquant à l'un des aspects principaux des marchés financiers.
 
 Le simulateur que nous avons développé est conçu pour gérer de manière dynamique les ordres d'achat et de vente dans un environnement qui simule la fluidité d'un marché électronique. Pour ce faire, nous avons créer une classe permettant l'ajout et l'annulation d'ordres par participant, respectant les principes d'un carnet d'ordres continu et fournir également un exemple concret d'utilisation de la classe.
 
-Ce projet a été dirigé par Monsieur Rémi Génet, professeur d'Informatique appliquée à la finance.
+Ce projet a été dirigé par Monsieur **Rémi Génet**, professeur d'Informatique appliquée à la finance.
 
 ## 1. Définition de la Classe 'Ordre'
 
