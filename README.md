@@ -112,6 +112,10 @@ if __name__ == "__main__":
     interface_utilisateur()
 ```
 
+## 5. Testez le code !5
+
+[À vous de tester notre code :](https://replit.com/@sanaharchaoui/Projet#main.py)
+
 ## Conclusion
 
 Ce projet a été une expérience enrichissante à plusieurs niveaux. En effet, n'ayant plus fait de Python depuis notre première année de licence, il nous a permis de nous réapproprier ce langage, essentiel à notre vie professionnelle future.
