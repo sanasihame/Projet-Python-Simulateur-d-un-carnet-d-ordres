@@ -114,6 +114,9 @@ if __name__ == "__main__":
 
 ## 5. Testez le code !
 
+À vous de tester le code en l'exécutant dans son ensemble :
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sanasihame/Projet-Python-Simulateur-d-un-carnet-d-ordres/main?labpath=PROJETC.ipynb)
 
 
 ## Conclusion
@@ -122,6 +125,6 @@ Ce projet a été une expérience enrichissante à plusieurs niveaux. En effet, 
 
 De plus, en intégrant une dimension financière, ce projet a également renforcé notre compréhension des dynamiques des marchés financiers tout en renforcant nos compétences en programmation. 
 
-Malgré des orientatitions futures différentes -- l'une d'entre nous (*Sihame Jdid*) a pour ambition de ne plus continuer dans la finance et de poursuivre dans le master **Quantitative Economics**, l'autre (*Sana Harchaoui*)continuant dans le master **EIF**, ce projet a été autant enrichissant l'une pour l'autre.
+Malgré des orientatitions futures différentes -- l'une d'entre nous (*Sihame Jdid*) a pour ambition de ne plus continuer dans la finance et de poursuivre dans le master **Quantitative Economics**, l'autre (*Sana Harchaoui*) continuant dans le master **EIF**, ce projet a été autant enrichissant l'une que pour l'autre.
 
 Enfin, nous tenons à exprimer notre gratitude envers notre professeur, Monsieur **Rémi Genet**, pour ses enseignements enrichissants tout au long de ce semestre.
