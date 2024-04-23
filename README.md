@@ -112,9 +112,9 @@ if __name__ == "__main__":
     interface_utilisateur()
 ```
 
-## 5. Testez le code !5
+## 5. Testez le code !
 
-[À vous de tester notre code :](https://replit.com/@sanaharchaoui/Projet#main.py)
+
 
 ## Conclusion
 
