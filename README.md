@@ -4,9 +4,9 @@
 
 Dans le cadre de notre formation en L3 Économie et Ingénierie Financière à l'Université Paris Dauphine-PSL, Nous, **Sana Harchaoui et Sihame Jdid**, avons décidé, pour notre projet d'Informatique appliquée à la finance, de travailler sur le sujet C : Création d'un Simulateur de Carnet d'Ordres. 
 
-Ce choix reflète notre volonté de combiner nos connaissances économiques financières acquises tout au long de notre formation à nos compétences techniques en prorammation, en s'attaquant à l'un des aspects principaux des marchés financiers.
+Ce choix reflète notre volonté de combiner nos connaissances économiques et financières acquises tout au long de notre formation à nos compétences techniques en programmation, en s'attaquant à l'un des aspects principaux des marchés financiers.
 
-Le simulateur que nous avons développé est conçu pour gérer de manière dynamique les ordres d'achat et de vente dans un environnement qui simule la fluidité d'un marché électronique. Pour ce faire, nous avons créer une classe permettant l'ajout et l'annulation d'ordres par participant, respectant les principes d'un carnet d'ordres continu et fournir également un exemple concret d'utilisation de la classe.
+Le simulateur que nous avons développé est conçu pour gérer de manière dynamique les ordres d'achat et de vente dans un environnement qui simule la fluidité d'un marché électronique. Pour ce faire, nous avons créer une classe permettant l'ajout et l'annulation d'ordres par participant, respectant les principes d'un carnet d'ordres continu et fournir également un exemple d'utilisation de la classe.
 
 Ce projet a été dirigé par Monsieur **Rémi Génet**, professeur d'Informatique appliquée à la finance.
 
@@ -76,7 +76,6 @@ La méthode **ajout_ordre** ajoute un ordre à la liste appropriée (achat ou ve
 L'interface utilisateur offre un menu simple avec des options permettant à l'utilisateur d'ajouter, afficher ou supprimer des ordres, ainsi de quitter le programme. Chaque action est gérée via des entrées utilisateur simples.
 
 ```bash
-
 # Exemple d'utilisation :
 def interface_utilisateur():
     carnet_ordres = Carnet_Ordres()  # Initialisation de la classe Carnet_Ordres
@@ -107,7 +106,6 @@ def interface_utilisateur():
 Le bloc de code ci-dessus détermine si le script est exécuté directement ou importé dans un autre fichier. S'il est exécuté directement, la fonction interface_utilisateur() est appelée, lançant l'interface du carnet d'ordres.
 
 ```bash
-
 if __name__ == "__main__":
     interface_utilisateur()
 ```
