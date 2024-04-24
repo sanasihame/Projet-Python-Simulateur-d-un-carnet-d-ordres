@@ -76,7 +76,6 @@ La méthode **ajout_ordre** ajoute un ordre à la liste appropriée (achat ou ve
 L'interface utilisateur offre un menu simple avec des options permettant à l'utilisateur d'ajouter, afficher ou supprimer des ordres, ainsi de quitter le programme. Chaque action est gérée via des entrées utilisateur simples.
 
 ```bash
-# Exemple d'utilisation :
 def interface_utilisateur():
     carnet_ordres = Carnet_Ordres()  # Initialisation de la classe Carnet_Ordres
     while True:
@@ -110,7 +109,140 @@ if __name__ == "__main__":
     interface_utilisateur()
 ```
 
-## 5. Testez le code !
+## 5. Exemple d'utilisation
+
+Dans cette partie, nous allons créer un scénario permettant de fournir un exemple concret d'utilisation de notre code.
+Pour ce faire, on se met dans la situation d'une journée basique de Trading.
+
+En exécutant le code, voilà ce que le terminal nous affiche :
+
+```plaintext
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 
+```
+
+Premièrement, les Traders entrent leurs ordres dans le carnet à l'ouverture du marché.
+- Un premier Trader ajoute un ordre d'achat pour 30 unités à 190€
+- Un deuxième Trader ajoute un ordre d'achat pour 50 unités à 130€
+- Un troisième Trader ajoute un ordre de vente pour 10 unités à 50€
+
+Dès lors, on sélectionne l'option 1
+Après plusieurs manipulations. Nous avons entré les 3 ordres de la manière suivante :
+
+```plaintext
+Sélectionnez une option: 1
+Entrez le prix de l'ordre: 190
+Entrez la quantité de l'ordre: 30
+Type d'ordre (achat/vente): achat
+ID du participant: 1
+Ordre ajouté. ID: 1, Participant: 1, Type: achat, Prix: 190.0, Quantité: 30
+
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 1
+Entrez le prix de l'ordre: 130
+Entrez la quantité de l'ordre: 50
+Type d'ordre (achat/vente): achat
+ID du participant: 2
+Ordre ajouté. ID: 2, Participant: 2, Type: achat, Prix: 130.0, Quantité: 50
+
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 1
+Entrez le prix de l'ordre: 50
+Entrez la quantité de l'ordre: 10
+Type d'ordre (achat/vente): vente
+ID du participant: 3
+Ordre ajouté. ID: 3, Participant: 3, Type: vente, Prix: 50.0, Quantité: 10
+```
+
+Ensuite, on fait afficher le carnet d'ordre.
+Les ordres d'achats seront triés par ordre décroissant et les ordres de vente par ordre croissant.
+
+```plaintext
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 2
+Carnet d'Ordres:
+Achats:
+ID: 1, Participant: 1, Prix: 190.0, Quantité: 30
+ID: 2, Participant: 2, Prix: 130.0, Quantité: 50
+Ventes:
+ID: 3, Participant: 3, Prix: 50.0, Quantité: 10
+```
+
+On ajoute finalement un nouvel ordre de vente pour 20 unités à 45€. Ce prix attractif deviendra le premier ordre de vente.
+
+```plaintext
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 1
+Entrez le prix de l'ordre: 45
+Entrez la quantité de l'ordre: 20
+Type d'ordre (achat/vente): vente
+ID du participant: 4
+Ordre ajouté. ID: 4, Participant: 4, Type: vente, Prix: 45.0, Quantité: 20
+
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 2
+Carnet d'Ordres:
+Achats:
+ID: 1, Participant: 1, Prix: 190.0, Quantité: 30
+ID: 2, Participant: 2, Prix: 130.0, Quantité: 50
+Ventes:
+ID: 4, Participant: 4, Prix: 45.0, Quantité: 20
+ID: 3, Participant: 3, Prix: 50.0, Quantité: 10
+```
+Finalement, on annule l'ordre du participant 2.
+
+```plaintext
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 3
+ID de l'ordre à supprimer: 2
+Ordre annulé.
+
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 2
+Carnet d'Ordres:
+Achats:
+ID: 1, Participant: 1, Prix: 190.0, Quantité: 30
+Ventes:
+ID: 4, Participant: 4, Prix: 45.0, Quantité: 20
+ID: 3, Participant: 3, Prix: 50.0, Quantité: 10
+```
+
+On quitte par la suite le code :
+
+```plaintext
+1. Ajouter un ordre
+2. Afficher les ordres
+3. Supprimer un ordre
+4. Quitter
+Sélectionnez une option: 4
+Au revoir!
+```
+
+## 6. Testez le code !
 
 À vous de tester le code en l'exécutant dans son ensemble :
 
