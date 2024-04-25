@@ -283,7 +283,7 @@ Sélectionnez une option: 4
 Au revoir!
 ```
 
-## 6. Testez le code !
+## 5. Testez le code !
 
 À vous de tester le code en l'exécutant dans son ensemble :
 
