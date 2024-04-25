@@ -67,7 +67,7 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
         les ventes par prix croissant. Refuse l'ordre si la quantité est inférieure au lot.
         """
         if quantite < self.lot:
-            print(f"Quantité d'ordre invalide: elle doit être au moins égale au lot minimum de                      {self.lot}.")
+            print(f"Quantité d'ordre invalide: elle doit être au moins égale au lot minimum de {self.lot}.")
             return
         if type_ordre not in ['achat', 'vente']: # Gestion des erreurs
             print("Type d'ordre invalide. Veuillez entrer 'achat' ou 'vente'.")
@@ -80,7 +80,7 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
             self.vente.append(ordre)
             self.vente.sort(key=lambda x: x['prix']) # Tri par ordre croissant
         self.dernier_id += 1
-        print(f"Ordre ajouté. ID: {self.dernier_id - 1}, Type: {type_ordre}, Prix: {prix}, Quantité:            {quantite}")
+        print(f"Ordre ajouté. ID: {self.dernier_id - 1}, Type: {type_ordre}, Prix: {prix}, Quantité: {quantite}")
 
     def annuler_ordre(self, id_ordre):
         """
