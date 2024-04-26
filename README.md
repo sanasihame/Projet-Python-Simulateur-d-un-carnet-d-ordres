@@ -45,13 +45,10 @@ Nous utilisons tout d'abord une méthode privée pour arrondir le prix à l'unit
         return round(prix / self.tick) * self.tick
 ```
 
-La méthode **__creer_ordre** créer l'ordre, en arrondissant le prix et en ajustant la quantité au multiple du lot.
-La méthode **ajout_ordre** ajoute un ordre à la liste appropriée (achat ou vente) et le trie immédiatement. 
-La méthode **annuler_ordre** cherche un ordre par son ID et le supprime s'il est trouvé.
-Enfin, la méthode **afficher_carnet** affiche le contenu actuel du carnet d'ordres, en lisant séparément les achats et les ventes.
+La méthode **__creer_ordre** crée l'ordre, en arrondissant le prix et en ajustant la quantité au multiple du lot.
 
 ```bash
-def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
+    def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
         prix = self.__round_price(prix)
         quantite = int(quantite / self.lot) * self.lot
         return {
@@ -60,7 +57,11 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
             'type_ordre': type_ordre,
             'id_ordre': id_ordre,
         }
+```
 
+La méthode **ajout_ordre** ajoute un ordre à la liste appropriée (achat ou vente) et le trie immédiatement. 
+
+```bash
     def ajout_ordre(self, prix, quantite, type_ordre):
         """
         Ajoute un ordre au carnet et le trie. Les achats sont triés par prix décroissant,
@@ -81,7 +82,11 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
             self.vente.sort(key=lambda x: x['prix']) # Tri par ordre croissant
         self.dernier_id += 1
         print(f"Ordre ajouté. ID: {self.dernier_id - 1}, Type: {type_ordre}, Prix: {prix}, Quantité: {quantite}")
+```
 
+La méthode **annuler_ordre** cherche un ordre par son ID et le supprime s'il est trouvé.
+
+```bash
     def annuler_ordre(self, id_ordre):
         """
         Annule un ordre basé sur son identifiant.
@@ -92,7 +97,11 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
                     del liste[i]
                     return True
         return False
+```
 
+Enfin, la méthode **afficher_carnet** affiche le contenu actuel du carnet d'ordres, en lisant séparément les achats et les ventes.
+
+```bash
     def afficher_carnet(self):
         """
         Affiche le carnet d'ordres, séparant les achats des ventes.
@@ -105,6 +114,7 @@ def __creer_ordre(self, prix, quantite, type_ordre, id_ordre):
             print(f"ID: {ordre['id_ordre']}, Prix: {ordre['prix']}, Quantité: {ordre['quantite']}")
 
 ```
+
 ## 3. Interaction avec l'Utilisateur
 
 L'interface utilisateur offre un menu simple avec des options permettant à l'utilisateur d'ajouter, afficher ou supprimer des ordres, ainsi de quitter le programme. Chaque action est gérée via des entrées utilisateur simples.
